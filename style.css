@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.container-body button {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid white;
+}
+
+.logo-part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.icon-s {
+    display: flex;
+    gap: 15px;
+}
+
+.banner-logo {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    background: pink;
+}
+
+.right_panel {
+    margin-left: 60px;
+}
+
+.right_panel p {
+    font-size: 18px;
+}
+
+.right_panel h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.right_panel b {
+    font-size: 20px;
+}
+
+.btns {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btns button {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container-part1 {
+    padding: 60px 80px;
+}
+
+.new-shopping {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.new-shopping h1 {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.shop {
+    color: pink;
+}
+
+.product-for {
+    display: grid;
+    gap: 20px;
+}
+
+.carding {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.carding img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carding button {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sale {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    background: white;
+}
+
+.texting h1 {
+    font-size: 48px;
+}
+
+.texting b {
+    display: block;
+    margin: 15px 0;
+}
+
+.texting button {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.shopping {
+    padding: 60px 80px;
+}
+
+.shopping h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+.catagor ul {
+    list-style: none;
+}
+
+.catagor li {
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.active-human {
+    color: red;
+    font-weight: bold;
+}
+
+.product-for-clients {
+    display: flex;
+    gap: 20px;
+}
+
+.product.for.clients .carding {
+    width: 250px;
+}
+
+.trending-products {
+    text-align: center;
+    margin: 60px 30px;
+}
+
+.product {
+    display: grid;
+    gap: 20px;
+    padding: 0 80px 60px;
+}
+
+.category-section-part {
+    padding: 60px 80px;
+}
+
+.category-header-part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.product-part-products {
+    display: grid;
+    gap: 25px;
+}
+
+.product-part-card {
+    text-align: center;
+}
+
+.shopping-sections {
+    padding: 60px 80px;
+    display: flex;
+    gap: 40px;
+}
+
+.product-sale h2 {
+    margin-bottom: 20px;
+}
+
+.product-sale .product-part-card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.clothes {
+    display: flex;
+    gap: 20px;
+}
+
+.card-part-human {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.news {
+    padding: 60px 80px;
+    background: white;
+}
+
+.product-news {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.object-card {
+    display: grid;
+    gap: 25px;
+}
+
+.object-card img {
+    width: 100%;
+}
+
+.basket,
+.instagram-feed {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.finally-end {
+    color: white;
+    padding: 60px 80px;
+}
+
+.the-last-part {
+    display: grid;
+    gap: 30px;
+}
+
+
+.down-part li {
+    margin: 8px 0;
+}
+
+.nice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    justify-content: center;
+}
+
+@media (max-width: 428px) {
+
+    .container-body {
+        display: flex;
+    }
+
+    .body {
+        padding: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-logo {
+        padding: 30px 15px;
+    }
+
+    .right_panel {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .product-for {
+        display: block;
+    }
+
+    .product {
+        display: block;
+    }
+
+    .product-part-products {
+        display: block;
+    }
+
+    .carding {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .shopping-sections {
+        display: flex;
+    }
+
+    .clothes {
+        display: flex;
+    }
+
+    .the-last-part {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .nice {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
