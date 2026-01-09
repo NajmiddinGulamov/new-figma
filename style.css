@@ -15,6 +15,10 @@ a {
     color: blue;
 }
 
+a:hover {
+    color: red;
+}
+
 .container {
     width: 100%;
 }
@@ -29,7 +33,7 @@ a {
     font-size: 14px;
 }
 
-.container-body button {
+.container-body button{
     padding: 14px 30px;
     background: red;
     color: white;
@@ -37,8 +41,22 @@ a {
     border-radius: 6px;
     cursor: pointer;
 }
-
-
+.btns{
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btns button {
+    padding: 14px 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 .body {
     display: flex;
@@ -60,10 +78,6 @@ a {
     display: flex;
     gap: 25px;
     font-weight: 500;
-}
-
-.menu a:hover {
-    color: red;
 }
 
 .icon-s {
@@ -93,24 +107,6 @@ a {
 
 .right_panel b {
     font-size: 20px;
-}
-
-.btns {
-    padding: 14px 30px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.btns button {
-    padding: 14px 30px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
 }
 
 .container-part1 {
@@ -148,7 +144,8 @@ a {
 .carding img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .carding button {
@@ -218,38 +215,14 @@ a {
     gap: 20px;
 }
 
-.product.for.clients .carding {
-    width: 250px;
-}
-
-.trending-products {
+.product-part-card {
     text-align: center;
-    margin: 60px 30px;
 }
 
 .product {
     display: grid;
     gap: 20px;
     padding: 0 80px 60px;
-}
-
-.category-section-part {
-    padding: 60px 80px;
-}
-
-.category-header-part {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.product-part-products {
-    display: grid;
-    gap: 25px;
-}
-
-.product-part-card {
-    text-align: center;
 }
 
 .shopping-sections {
@@ -307,40 +280,143 @@ a {
 
 .finally-end {
     color: white;
-    padding: 60px 80px;
+    padding: 60px 0 40px;
+    font-family: Arial, sans-serif;
 }
 
 .the-last-part {
-    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
+.down-part {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 .down-part li {
-    margin: 8px 0;
+    margin-bottom: 10px;
+}
+
+.down-part li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.down-part li a:hover {
+    color: blue;
+    padding-left: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid grey;
+    margin: 0;
 }
 
 .nice {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    justify-content: center;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
 }
 
-@media (max-width: 428px) {
+.nice p {
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+}
 
+.medium {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    margin: 50px auto;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.medium h4 {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    font-size: 22px;
+    max-width: 400px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: blue;
+}
+
+.star {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 50px;
+}
+
+.boy {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    width: 250px;
+}
+
+
+
+@media (max-width: 428px) {
     .container-body {
-        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .body {
         padding: 15px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .menu {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .banner-logo {
@@ -348,50 +424,65 @@ a {
     }
 
     .right_panel {
-        margin-left: 0;
         text-align: center;
     }
 
-    .product-for {
-        display: block;
+    .img-part {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px;
     }
 
     .product {
-        display: block;
-    }
-
-    .product-part-products {
-        display: block;
-    }
-
-    .carding {
-        margin-bottom: 20px;
-    }
-
-    .card {
-        margin-bottom: 20px;
-    }
-
-    .content {
-        display: flex;
-    }
-
-    .shopping-sections {
-        display: flex;
-    }
-
-    .clothes {
-        display: flex;
-    }
-
-    .the-last-part {
-        grid-template-columns: 1fr;
+        width: 100%;
         text-align: center;
+    }
+
+    .product-for-clients{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .product-part-card{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .shopping-sections{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .clothes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-part-human,
+    .the-last-part {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .medium {
+        width: 100%;
+        height: 300px;
+        margin: 20px 0;
+    }
+
+    .medium h4 {
+        max-width: 90%;
+        font-size: 18px;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .boy {
+        width: 150px;
+        right: 20px;
+        bottom: 0;
     }
 
     .nice {
         flex-direction: column;
         text-align: center;
     }
-
 }
